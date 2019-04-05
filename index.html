@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 
+
 <body>
 
 
@@ -18,9 +19,8 @@
         <h1>Survey Form</h1>
         <div class="container">
             <h3>Let us know how we can improve freeCodeCamp</h3>
+
             <form class="survey-form">
-
-
 
                 <div class="form-group">
                     <div class="form-group-label">
@@ -32,81 +32,124 @@
                 </div>
 
                 <div class="form-group">
-                        <div class="form-group-label">
-                            <label for="email">Email:</label>
-                        </div>
-                        <div class="form-group-input">
-                            <input type="text" id="email">
-                        </div>
+                    <div class="form-group-label">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="form-group-input">
+                        <input type="text" id="email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group-label">
+                        <label for="age">Age:</label>
+                    </div>
+                    <div class="form-group-input">
+                        <input type="number" id="age">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group-label">
+                        <label for="user-choice-role">Which option best describes your current role?</label>
                     </div>
 
-                <div class="form-group">
-                    <label for="age">Age:</label>
-                    <input type="number" id="age">
+                    <div id="user-choice-role" class="form-group-input">
+                        <select>
+                            <ul>
+                                <li>
+                                    <option value="Student">Student</option>
+                                </li>
+                                <li>
+                                    <option value="Full Time Job">Full Time Job</option>
+                                </li>
+                                <li>
+                                    <option value="Full Time Learner">Full Time Learner</option>
+                                </li>
+                                <li>
+                                    <option value="Prefer not to say">Prefer not to say</option>
+                                </li>
+                                <li>
+                                    <option value="other">Other</option>
+                                </li>
+                            </ul>
+                        </select>
+                    </div>
+
                 </div>
 
                 <div class="form-group">
-                    <label for="role">Which option best describes your current role?</label>
-                    <select>
-                        <option value="Student">Student</option>
-                        <option value="Full Time Job">Full Time Job</option>
-                        <option value="Full Time Learner">Full Time Learner</option>
-                        <option value="Prefer not to say">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <div class="form-group-label">
+                        <label for="user-choice-recommendation">How likely is that you would
+                            recommend freeCodeCamp to a friend?</label>
+                    </div>
 
-                </div>
-
-                <div class="form-group">
-                    <label for="">How likely is that you would
-                        recommend freeCodeCamp to a friend?</label>
-                    <input type="radio" name="friend-recommendation" value="Definitely">Definitely
-                    <input type="radio" name="friend-recommendation" value="Maybe">Maybe
-                    <input type="radio" name="friend-recommendation" value="Not sure">Not sure
+                    <div id="user-choice-recommendation" class="form-group-label">
+                        <ul>
+                            <li><input type="radio" name="friend-recommendation" value="Definitely">Definitely</li>
+                            <li><input type="radio" name="friend-recommendation" value="Maybe">Maybe</li>
+                            <li><input type="radio" name="friend-recommendation" value="Not sure">Not sure</li>
+                        </ul>
+                    </div>
                 </div>
 
 
                 <div class="form-group">
-                    <label for="role">What do you like most in FCC:</label>
+                    <div class="form-group-label">
+                        <label for="role">What do you like most in FCC:</label>
+                    </div>
+
                     <select>
                         <option value="Challenges">Challenges</option>
                         <option value="Project">Project</option>
                         <option value="Community">Communityr</option>
                         <option value="Open source">Open source</option>
                     </select>
-
                 </div>
 
-                <div class="form-group">
-                    <label for="">Things that should be improved in the future
-                        (Check all that apply): </label>
+        
 
-                    <input type="checkbox" name="improve-reccomendation" value="Front-end Projects">Front-end
-                    Projects
-                    <input type="checkbox" name="improve-reccomendation" value="Back-end Projects">Back-end Projects
-                    <input type="checkbox" name="improve-reccomendation" value="Data Visualization">Data
-                    Visualization
-                    <input type="checkbox" name="improve-reccomendation" value="Challenges">Challenges
-                    <input type="checkbox" name="improve-reccomendation" value="Open Source Community">Open Source
-                    Community
-                    <input type="checkbox" name="improve-reccomendation" value="Gitter Help Rooms">Gitter Help Rooms
-                    <input type="checkbox" name="improve-reccomendation" value="Videos">Videos
-                    <input type="checkbox" name="improve-reccomendation" value="City Meetups">City Meetups
-                    <input type="checkbox" name="improve-reccomendation" value="Wiki">Wiki
-                    <input type="checkbox" name="improve-reccomendation" value="Forum">Forum
-                    <input type="checkbox" name="improve-reccomendation" value="Additional Courses">Additional
-                    Courses
+        <div class="form-group">
+            <div class="form-group-label">
+                <label for="">Things that should be improved in the future
+                    (Check all that apply): </label>
+            </div>
 
-                </div>
+            <div class="form-group-input">
+                <ul>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Front-end Projects">Front-end
+                        Projects</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Back-end Projects">Back-end Projects
+                    </li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Data Visualization">Data
+                        Visualization</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Challenges">Challenges</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Open Source Community">Open Source
+                        Community</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Gitter Help Rooms">Gitter Help Rooms
+                    </li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Videos">Videos</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="City Meetups">City Meetups</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Wiki">Wiki</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Forum">Forum</li>
+                    <li><input type="checkbox" name="improve-reccomendation" value="Additional Courses">Additional
+                        Courses</li>
+                </ul>
+            </div>
+        </div>
 
-                <div class="form-group">
-                    <label for="suggestions-comments">Any Comments or Suggestions?</label>
-                    <textarea id="suggestions-comments" placeholder="Enter your comment here...">
+        <div class="form-group">
+            <div class="form-group-label">
+                <label for="suggestions-comments">Any Comments or Suggestions?</label>
+            </div>
+            <div class="form-group-input">
+                <textarea id="suggestions-comments" placeholder="Enter your comment here...">
                     </textarea>
-                </div>
+            </div>
+        </div>
 
 
-            </form>
+        </form>
         </div>
 
     </main>
