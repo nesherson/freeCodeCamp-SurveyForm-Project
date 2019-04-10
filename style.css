@@ -60,15 +60,12 @@ ul {
     flex: 1 1 100px;  
 }
 
-.form-group-input input {
+.input-field {
     padding: 8px 10px;
     border: 1px solid #cccccc;
     border-radius: 3px;
-    margin-left: 15px;  
-}
-
-.input-field {
-    width: 250px;
+    margin-left: 15px; 
+    width: 250px; 
 }
 
 .form-group-input ul {
@@ -106,14 +103,8 @@ ul {
         width: 80%;
     }
 
-    .form-group-input {
-        flex: 1 1 100px;
-        
-    }
-
     .form-group-label {
-       align-self: flex-start;
-        
+       align-self: flex-start;    
     }
 
     .container {
@@ -123,11 +114,9 @@ ul {
 
 @media only screen and (max-width: 570px) {
 
-.form-group {
-    
+.form-group {   
     flex-direction: column;
-    padding-bottom: 15px;
-    
+    padding-bottom: 15px;   
 }
 
 .form-group-input {
@@ -140,12 +129,11 @@ ul {
     margin-bottom: 15px;
 }
 
-.form-group-label {
-    
+.form-group-label {  
     text-align: left;
 }
 
-.form-group-input input { 
+.input-field { 
     margin-left: 0;  
 }
 
