@@ -20,7 +20,7 @@ ul {
 .container {
     background-color: white;
     margin: 0 auto;
-    padding: 15px 50px;
+    padding: 15px 25px;
     max-width: 900px;
     width: 75%;
     border-radius: 5px;
@@ -57,7 +57,7 @@ ul {
 .form-group-label {
     flex: 1 1 100px;
     text-align: right;
-
+    align-self: center;
 }
 
 .form-group-input {
@@ -97,10 +97,12 @@ ul {
     border: 1px solid #cccccc;
     border-radius: 3px;
     height: 50px;
+    resize: vertical;
 }
 
 .container h3 {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 980px) {
@@ -111,6 +113,11 @@ ul {
 
     .form-group-input {
         flex: 1 1 100px;
+        
+    }
+
+    .form-group-label {
+       align-self: flex-start;
         
     }
 
@@ -159,6 +166,3 @@ ul {
 }
    
 }
-
-
-
