@@ -22,6 +22,7 @@ ul {
     margin: 0 auto;
     padding: 15px 50px;
     max-width: 900px;
+    width: 75%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -31,53 +32,133 @@ ul {
 .survey-form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .form-group {
     display: flex;
-    padding-bottom: 30px;
-    justify-content: flex-end;
-    
+    padding-bottom: 30px; 
 }
+
+.submit-btn {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    height: 40px;
+    width: 96px;
+    margin: 10px auto;
+    border: 0px solid;
+}
+
+
 
 .form-group-label {
     flex: 1 1 100px;
     text-align: right;
-   
+
 }
 
 .form-group-input {
     flex: 1 1 100px;
-
+    
 }
 
+.form-group-input input {
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-left: 15px;  
+}
+
+.input-field {
+    width: 250px;
+}
+
+.form-group-input ul {
+    padding: 0;
+    margin: 0;
+}
+
+.form-group-input ul li {
+    padding: 5px;
+}
+
+.form-group-input select {
+    padding: 10px;
+    margin-left: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.form-group-input textarea {
+    margin-left: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    height: 50px;
+}
 
 .container h3 {
     text-align: center;
 }
 
+@media only screen and (max-width: 980px) {
 
+    .input-field {
+        width: 80%;
+    }
 
-.survey-form label {
-    padding-right: 15px;
+    .form-group-input {
+        flex: 1 1 100px;
+        
+    }
 
+    .container {
+        padding: 15px 5%;
+    }
 }
 
-.survey-form input {
 
-    padding: 5px 10px;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
+@media only screen and (max-width: 570px) {
+
+.form-group {
+    
+    flex-direction: column;
+    padding-bottom: 15px;
+    
+}
+
+.form-group-input {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.form-group-label {
+    flex: 1;
+    margin-bottom: 15px;
+}
+.form-group-label {
+    
+    text-align: left;
+}
+
+.form-group-input input { 
+    margin-left: 0;  
+}
+
+
+.form-group-input select {
+    
+    margin-left: 0;
+}
+
+.form-group-input textarea {
+    margin-left: 0;
+    
+}
    
-
 }
 
-.survey-form select {
 
-    padding: 5px 10px;
-    border: 1px solid #cccccc;
-    border-radius: 3px;
 
-}
