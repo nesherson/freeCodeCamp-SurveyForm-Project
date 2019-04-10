@@ -9,7 +9,6 @@ h1 {
 
 ul {
     list-style-type: none;
-
 }
 
 .main-form {
@@ -25,8 +24,7 @@ ul {
     width: 75%;
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .survey-form {
@@ -52,8 +50,6 @@ ul {
     border: 0px solid;
 }
 
-
-
 .form-group-label {
     flex: 1 1 100px;
     text-align: right;
@@ -61,8 +57,7 @@ ul {
 }
 
 .form-group-input {
-    flex: 1 1 100px;
-    
+    flex: 1 1 100px;  
 }
 
 .form-group-input input {
@@ -126,7 +121,6 @@ ul {
     }
 }
 
-
 @media only screen and (max-width: 570px) {
 
 .form-group {
@@ -145,6 +139,7 @@ ul {
     flex: 1;
     margin-bottom: 15px;
 }
+
 .form-group-label {
     
     text-align: left;
@@ -154,7 +149,6 @@ ul {
     margin-left: 0;  
 }
 
-
 .form-group-input select {
     
     margin-left: 0;
@@ -163,6 +157,5 @@ ul {
 .form-group-input textarea {
     margin-left: 0;
     
-}
-   
+} 
 }

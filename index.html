@@ -45,8 +45,8 @@
                         <label for="number-label">* Age:</label>
                     </div>
                     <div class="form-group-input">
-                        <input class="input-field" type="number" id="number-label" required
-                         placeholder="Age" min="1" max="99">
+                        <input class="input-field" type="number" id="number-label" required placeholder="Age" min="1"
+                            max="99">
                     </div>
                 </div>
 
@@ -58,6 +58,9 @@
                     <div id="user-choice-role" class="form-group-input">
                         <select id="dropdown">
                             <ul>
+                                <li>
+                                    <option class="option-disabled-value" disabled selected value>Select an option</option>
+                                </li>
                                 <li>
                                     <option value="Student">Student</option>
                                 </li>
@@ -103,6 +106,7 @@
                     <div class="form-group-input">
 
                         <select>
+                            <option disabled selected value>Select an option</option>
                             <option value="Challenges">Challenges</option>
                             <option value="Project">Project</option>
                             <option value="Community">Communityr</option>
@@ -153,9 +157,7 @@
                         <label for="suggestions-comments">Any Comments or Suggestions?</label>
                     </div>
                     <div class="form-group-input">
-                        <textarea class="input-field" id="suggestions-comments"
-                            placeholder="Enter your comment here..." rows="4" cols="50">
-                    </textarea>
+                        <textarea class="input-field" id="suggestions-comments" placeholder="Enter your comment here..."></textarea>
                     </div>
                 </div>
 
